@@ -6,13 +6,14 @@
 #include "mylog.h"
 #include <malloc.h>
 
+struct Node
+{
+    int id;
+    struct Node *next;
+};
+
 void testLinkedList() {
     LOGD("testLinkedList");
-    struct Node
-    {
-        int id;
-        struct Node *next;
-    };
 
     struct Node node0 = {
             .id = 0,
@@ -54,4 +55,15 @@ void testLinkedList() {
         LOGD("tempPoint node i = %d", tempPoint->id);
         tempPoint = tempPoint->next;
     }
+
+
+
+}
+
+struct Node* reverseLikedList(struct Node *head) {
+    struct Node *tail;
+
+
+
+    return tail;
 }
